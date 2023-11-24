@@ -12,7 +12,7 @@
 <?php
 for ($i=1; $i<=500; $i++)
 {
-    echo ("Je dois faire la sauvegarde régulière de mes fichiers \n");
+    echo ("Je dois faire la sauvegarde régulière de mes fichiers <br>");
 }
 
 

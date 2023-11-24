@@ -10,6 +10,7 @@
 </body>
 </html>
 <?php
+
 $tableaumois = [
     "janvier" => 31,
     "février" => 28, //29 en cas d'années bissextiles
@@ -25,50 +26,42 @@ $tableaumois = [
     "décembre" => 31,
 ];
 
-
-echo "<table border = '1'>";
+echo "<table border='1'>";
 echo "<tr><th>Mois</th><th>Nombre de jours</th></tr>";
-foreach($tableaumois as $mois => $jours)
-{
+foreach ($tableaumois as $mois => $jours) {
     echo "<tr><td>$mois</td><td>$jours</td></tr>";
 }
-echo "<table><br>";
+echo "</table><br>";
 
-echo "<table border = '1'>";
+echo "<table border='1'>";
 echo "<tr><td>Mois de 31 jours</td><td>jours</td>";
-foreach($tableaumois as $mois => $jours)
-{
-    if ($jours === "31")
-    {
-        echo "<td>".$mois."</td><td>".$jours."</td></tr>";
+foreach ($tableaumois as $mois => $jours) {
+    if ($jours === 31) {
+        echo "<tr><td>$mois</td><td>$jours</td></tr>";
     }
-    
-};
-echo "<table><br>";
+}
+echo "</table><br>";
 
-echo "<table border = '1'>";
-echo "<tr><td>Mois de 31 jours</td><td>jours</td>";
-foreach($tableaumois as $mois => $jours)
-{
-    if ($jours === "30")
-    {
-        echo "<td>".$mois."</td><td>".$jours."</td></tr>";
+echo "<table border='1'>";
+echo "<tr><td>Mois de 30 jours</td><td>jours</td>";
+foreach ($tableaumois as $mois => $jours) {
+    if ($jours === 30) {
+        echo "<tr><td>$mois</td><td>$jours</td></tr>";
     }
-    
-};
-echo "<table><br>";
+}
+echo "</table><br>";
 
-echo "<table border = '1'>";
-echo "<tr><td>Mois de 31 jours</td><td>jours</td>";
-foreach($tableaumois as $mois => $jours)
-{
-    if ($jours === "28")
-    {
-        echo "<td>".$mois."</td><td>".$jours."</td></tr>";
+echo "<table border='1'>";
+echo "<tr><td>Mois de 28 jours</td><td>jours</td>";
+foreach ($tableaumois as $mois => $jours) {
+    if ($jours === 28) {
+        echo "<tr><td>$mois</td><td>$jours</td></tr>";
     }
-    
-};
-echo "<table><br>";
+}
+echo "</table><br>";
 ?>
+    
+</body>
+</html>
 
-?>
+

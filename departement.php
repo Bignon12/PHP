@@ -7,37 +7,33 @@
 </head>
 <body>
     <?php
-    $departements = array(
+ 
+$departements = array(
+    "Hauts-de-france" => array("Aisne", "Nord", "Oise", "Pas-de-Calais", "Somme"),
+    "Bretagne" => array("Côtes d'Armor", "Finistère", "Ille-et-Vilaine", "Morbihan"),
+    "Grand-Est" => array("Ardennes", "Aube", "Marne", "Haute-Marne", "Meurthe-et-Moselle", "Meuse", "Moselle", "Bas-Rhin", "Haut-Rhin", "Vosges"),
+    "Normandie" => array("Calvados", "Eure", "Manche", "Orne", "Seine-Maritime")
+);
 
-        "Hauts-de-france" => array("Aisne", "Nord", "Oise", "Pas-de-Calais", "Somme"),
-    
-        "Bretagne" => array("Côtes d'Armor", "Finistère", "Ille-et-Vilaine", "Morbihan"),
-    
-        "Grand-Est" => array("Ardennes", "Aube", "Marne", "Haute-Marne", "Meurthe-et-Moselle", "Meuse", "Moselle", "Bas-Rhin", "Haut-Rhin", "Vosges"),
-    
-        "Normandie" => array("Calvados", "Eure", "Manche", "Orne", "Seine-Maritime")
-    );
-
-//Affichage de la liste des régions par ordre alphabétique
+// Triez le tableau principal par les clés (les noms des régions) par ordre alphabétique
 ksort($departements);
-foreach($departements as $region => $listedepartement){
-    echo "$region: \n";
-    foreach($listedepartement as $departement){
-        echo "- $departement\n";
-    }
-    echo "\n";
-}
 
-//Affichage de la liste des régions suivie du nombre de départements
-foreach($departements as $region => $listedepartement){
-    echo "$region: ";
-
-        $nd = count ($listedepartement);
-        echo "$nd \n";
+// Affichez les régions et leur nombre de départements avec les départements 
+foreach ($departements as $region => $departementList) {
+    $nombreDepartements = count($departementList);
+    echo "<strong>$region :</strong> $nombreDepartements départements<br>";
     
-   
+    echo "<ul>";
+    foreach ($departementList as $departement) {
+        echo "<li>$departement</li>";
+    }
+    echo "</ul>";
+    
+    echo "<br>";
 }
-echo "\n";
 ?>
+
+
+
 </body>
 </html>

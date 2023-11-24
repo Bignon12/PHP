@@ -7,7 +7,7 @@
 </head>
 <body>
 
-<table "border" ="1">
+<table >
     <tr>
         <th></th>
         <?php
