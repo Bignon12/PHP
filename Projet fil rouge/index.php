@@ -8,14 +8,11 @@
      <div>
         <h1 class="text-center" ;>Bienvenue!</h1>
     </div>
-   
-    <div id="results" class="d-flex flex-wrap justify-content-around"></div>
+
+    <div id="results" class="row d-flex justify-content-around mx-auto"></div> 
 
     <div id="cacher">
-        
-    <div class="d-flex justify-content-around mt-3">           
-        <a href="categorie.php" class="btn btn-light btn-lg zoom col-5 col-md-1 btns">Suivant</a>
-    </div>
+
 
     <div class="bloc">
         <div class="d-flex justify-content-around">
@@ -78,6 +75,7 @@
         <img src="images_the_district/food/buffalo-chicken.webp" alt="fff" width="200" height="200">
         <img src="images_the_district/food/lasagnes_viande.jpg" alt="fff" width="200" height="200">
     </div> 
+</div>
 </div>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="index.js"></script>

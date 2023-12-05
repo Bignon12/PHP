@@ -40,12 +40,13 @@ $(document).ready(function(){
                         </div>
                     </div>
                         ` 
-
                     results.append(html);
                     })
                 }
             }
         });
         results.empty();  
+
     });
-})
+
+});
