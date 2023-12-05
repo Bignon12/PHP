@@ -6,7 +6,7 @@
 <body>
    
      <div>
-        <h1 class="text-center" ;>Bienvenue! Veuillez choisir votre catégorie de plats</h1>
+        <h1 class="text-center" ;>Bienvenue!</h1>
     </div>
    
     <div id="results" class="d-flex flex-wrap justify-content-around"></div>
